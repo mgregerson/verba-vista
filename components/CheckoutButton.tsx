@@ -7,6 +7,7 @@ import { useState } from "react";
 
 function CheckoutButton() {
   const { data: session } = useSession();
+
   const [loading, setLoading] = useState(false);
   const createCheckoutSession = async () => {
     if (!session?.user.id) return;
@@ -38,8 +39,6 @@ function CheckoutButton() {
         setLoading(false);
       }
     });
-
-    // redirect user to checkout page
   };
 
   return (
