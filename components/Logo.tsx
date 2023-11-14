@@ -1,5 +1,4 @@
 import React from "react";
-import LogoImage from "@logos/t.png";
 import Image from "next/image";
 import Link from "next/link";
 import { AspectRatio } from "./ui/aspect-ratio";
@@ -13,12 +12,7 @@ export default function Logo() {
             ratio={16 / 9}
             className="flex items-center justify-center"
           >
-            <Image
-              priority
-              src={LogoImage}
-              alt="Logo"
-              className="dark:filter dark:invert w-[60px] h-[50px]"
-            ></Image>
+            Verba Vista
           </AspectRatio>
         </div>
       </Link>
