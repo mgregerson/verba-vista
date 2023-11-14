@@ -17,7 +17,7 @@ export default function PricingPage() {
         </div>
         <div className="relative mt-6">
           <p className="mx-auto max-w-2xl text-lg leading-8 text-white/60">
-            We're 99% sure we have a plan to match 100% of your needs
+            We have a plan to match your needs.
           </p>
           <svg
             viewBox="0 0 1208 1024"
@@ -39,10 +39,8 @@ export default function PricingPage() {
           </svg>
         </div>
       </div>
-      <div className="flow-root bg-white pb-24 sm:pb-32">
-        <div className="-mt-80">
-          <PricingCards redirect={true} />
-        </div>
+      <div className="-mt-80">
+        <PricingCards redirect={true} />
       </div>
     </div>
   );
